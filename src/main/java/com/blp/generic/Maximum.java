@@ -1,8 +1,8 @@
 package com.blp.generic;
 
 public class Maximum {
-    public static Float findMaximum(Float a, Float b, Float c) {
-        Float max = a;
+    public static String findMaximum(String a, String b, String c) {
+        String max = a;
         if (b.compareTo(a) > 0 && b.compareTo(c) > 0) {
             max = b;
         }
