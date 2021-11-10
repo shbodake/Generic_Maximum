@@ -12,7 +12,7 @@ public class Maximum {
         return max;
     }
         public static void main (String[]args){
+            System.out.println("Welcome to Generics Maximum Program");
               Maximum.findMaximum(2,5,7)  ;
-
         }
     }
