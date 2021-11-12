@@ -7,19 +7,19 @@ import static org.junit.Assert.*;
 
 public class MaximumTest {
     @Test
-    public void stringMaxAtFirstPosition() {
-        String result = Maximum.findMaximum("Cricket", "Football","Badminton");
-        Assert.assertEquals("Football", result);
+    public void intMax() {
+        int result = Maximum.findMaximum(5,7,2);
+        Assert.assertEquals(7, result);
     }
 
     @Test
-    public void stringMaxAtSecondPosition() {
-        String result = Maximum.findMaximum("Football","Cricket","Badminton");
-        Assert.assertEquals("Football", result );
+    public void floatMax() {
+        float result = Maximum.findMaximum(5f,4f,9f);
+        Assert.assertEquals(9f, result,0.0 );
     }
 
     @Test
-    public void stringMaxAtThirdPosition() {
+    public void  stringMax() {
         String result = Maximum.findMaximum("Football","Badminton","Cricket");
         Assert.assertEquals("Football", result);
     }
