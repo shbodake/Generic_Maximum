@@ -1,9 +1,11 @@
 package com.blp.generic;
 
-public class Maximum {
-    public static String findMaximum(String a, String b, String c) {
-        String max = a;
-        if (b.compareTo(a) > 0 && b.compareTo(c) > 0) {
+public class Maximum{
+
+    public static <E extends Comparable>E findMaximum(E a, E b, E c) {
+
+        E max = a;
+        if (a.compareTo(b) > 0 && b.compareTo(c) > 0) {
             max = b;
         }
         if (c.compareTo(max) > 0) {
@@ -15,4 +17,5 @@ public class Maximum {
             System.out.println("Welcome to Generics Maximum Program");
 
         }
-    }
+
+}
